@@ -30,7 +30,7 @@ function Contact() {
           {[
             { icon: MapPin, t: "Visit the nursery", d: "Lot 22, Jalan Hijau\nShah Alam, Selangor" },
             { icon: Mail, t: "Email", d: "hello@agrosupply.my" },
-            { icon: Phone, t: "Phone", d: "+60 3 1234 5678" },
+            { icon: Phone, t: "Phone", d: "+60 10-913-0116" },
           ].map(({ icon: Icon, t, d }) => (
             <div key={t} className="flex gap-4 rounded-2xl border border-border/60 bg-card p-5">
               <span className="inline-flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-primary">
