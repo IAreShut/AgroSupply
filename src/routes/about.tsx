@@ -1,6 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Leaf, Sprout, Users, Award } from "lucide-react";
 import hero from "@/assets/hero-nursery.jpg";
+import team1 from "@/assets/team-1.png";
+import team2 from "@/assets/team-2.png";
+import team3 from "@/assets/team-3.png";
+
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -30,15 +34,13 @@ function About() {
       <section className="mx-auto max-w-4xl px-6 py-20">
         <h2 className="font-display text-3xl font-semibold">Why AgroSupply</h2>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-          AgroSupply began in 2018 as a small family project — three agriculture students wanting to make
-          home growing accessible to everyone. Today, our team of horticulturists, designers and growers
-          ships plants, seeds and tools to homes and small farms nationwide, paired with the knowledge to
-          help every customer succeed.
+          At Agro Supply, we believe that agriculture is more than just growing plants—it is about cultivating a sustainable future. Founded with a passion for supporting farmers, gardeners, and plant enthusiasts, Agro Supply is committed to providing high-quality agricultural products at affordable prices.
+          Our journey began with a simple mission: to make agricultural supplies easily accessible through a trusted online platform. Whether you are managing a commercial farm, operating a nursery, or growing plants at home, we understand the importance of having reliable products to achieve healthy and productive growth.
         </p>
-        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+        {/* <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           We grow without harsh chemicals, package without single-use plastic, and donate 1% of every sale
           to school gardening programmes across Selangor.
-        </p>
+        </p> */}
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-20">
@@ -62,12 +64,12 @@ function About() {
         <h2 className="font-display text-3xl font-semibold">The team</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {[
-            { name: "Aisyah Rahman", role: "Co-founder · Horticulture" },
-            { name: "Daniel Tan", role: "Co-founder · Operations" },
-            { name: "Nurul Hidayah", role: "Lead Grower" },
+            { name: "Muhammad Aqil Danial", role: "Co-founder · Horticulture", image: team1 },
+            { name: "Muhammad Syahreza", role: "Co-founder · Operations", image: team2 },
+            { name: "Muhammad Aiman", role: "Lead Grower", image: team3 },
           ].map((m) => (
             <div key={m.name} className="rounded-2xl border border-border/60 bg-card p-6">
-              <div className="h-16 w-16 rounded-full" style={{ background: "var(--gradient-leaf)" }} />
+              <img src={m.image} alt={m.name} className="h-16 w-16 rounded-full object-cover" />
               <p className="mt-4 font-display text-lg font-semibold">{m.name}</p>
               <p className="text-sm text-muted-foreground">{m.role}</p>
             </div>

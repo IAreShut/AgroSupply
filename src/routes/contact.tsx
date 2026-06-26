@@ -29,7 +29,7 @@ function Contact() {
         <aside className="space-y-6">
           {[
             { icon: MapPin, t: "Visit the nursery", d: "Lot 22, Jalan Hijau\nShah Alam, Selangor" },
-            { icon: Mail, t: "Email", d: "hello@greenharvest.my" },
+            { icon: Mail, t: "Email", d: "hello@agrosupply.my" },
             { icon: Phone, t: "Phone", d: "+60 3 1234 5678" },
           ].map(({ icon: Icon, t, d }) => (
             <div key={t} className="flex gap-4 rounded-2xl border border-border/60 bg-card p-5">
